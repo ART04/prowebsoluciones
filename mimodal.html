@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oferta Especial</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h2 {
+            font-size: 2em;
+            color: #007bff;
+        }
+
+        .countdown {
+            font-size: 1.5em;
+            color: #ff5733;
+            font-weight: bold;
+        }
+
+        .offer-text {
+            font-size: 1.2em;
+            margin-top: 20px;
+            color: #333;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1em;
+            margin-top: 20px;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        .date-time {
+            font-size: 1.2em;
+            color: #333;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <h2>¡Oferta Única Solo en ProWebSoluciones!</h2>
+
+    <!-- Fecha y hora del sistema -->
+    <p class="date-time">Fecha y Hora actual: <span id="currentDateTime"></span></p>
+
+    <!-- Cuenta regresiva -->
+    <p class="countdown" id="countdown"></p>
+
+    <!-- Texto de la oferta -->
+    <p class="offer-text">
+        Paquetes diseñados a tu medida. ¡No pierdas esta oportunidad!
+    </p>
+
+    <!-- Botón para mostrar el PDF -->
+<button class="btn" onclick="window.open('https://heyzine.com/flip-book/daed89b020.html#page/1', '_blank')">Ver Catálogo 2024</button>
+
+
+ 
+    
+
+    
+    <!-- Contenedor del PDF -->
+    <div id="pdfViewer"></div>
+
+    <script>
+        // Fecha de finalización de la oferta
+        const offerEndDate = new Date("December 31, 2025 13:00:00");
+
+        // Mostrar la fecha y hora actual
+        function updateCurrentDateTime() {
+            const now = new Date();
+            document.getElementById("currentDateTime").textContent = now.toLocaleString();
+        }
+
+        // Cuenta regresiva
+        function updateCountdown() {
+            const now = new Date();
+            const timeRemaining = offerEndDate - now;
+
+            if (timeRemaining <= 0) {
+                document.getElementById("countdown").textContent = "¡La oferta ha finalizado!";
+            } else {
+                const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+                document.getElementById("countdown").textContent = `Oferta válida por: ${days}d ${hours}h ${minutes}m ${seconds}s`;
+            }
+        }
+
+        // Función para cargar el PDF en el iframe
+        function loadPDF() {
+            const iframe = document.getElementById('pdfIframe');
+            iframe.style.display = 'block'; // Mostrar el iframe
+            iframe.src = 'Catálogo Prowebsoluciones 2024.pdf'; // Ruta al PDF
+        }
+
+        // Actualiza la fecha y la cuenta regresiva cada segundo
+        setInterval(updateCountdown, 1000);
+        setInterval(updateCurrentDateTime, 1000);
+
+                function loadPDF() {
+                        const url = 'Catálogo Prowebsoluciones 2024.pdf'; // Ruta al archivo PDF
+                        const pdfViewer = document.getElementById('pdfViewer');
+
+                        // Cargar PDF usando PDF.js
+                        const loadingTask = pdfjsLib.getDocument(url);
+                        loadingTask.promise.then(function (pdf) {
+                            pdf.getPage(1).then(function (page) {
+                                const scale = 1.5;
+                                const viewport = page.getViewport({ scale });
+
+                                // Crear un lienzo para mostrar la página
+                                const canvas = document.createElement('canvas');
+                                const context = canvas.getContext('2d');
+                                canvas.height = viewport.height;
+                                canvas.width = viewport.width;
+                                pdfViewer.appendChild(canvas);
+
+                                // Renderizar la página en el lienzo
+                                const renderContext = {
+                                    canvasContext: context,
+                                    viewport: viewport
+                                };
+                                page.render(renderContext);
+                            });
+                        }).catch(function (error) {
+                            console.error('Error al cargar el PDF:', error);
+                        });
+                    }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+
+
+:root{
+    --blue:#069dfb;
+    --black:#343232;
+    --white:#f1f1f1;
+    --grey:#999;
+    --Inter:'Inter', sans-serif;
+    --Montserrat:'Montserrat', sans-serif;
+    --poppins:'Poppins', sans-serif;
+    --Quicksand:'Quicksand', sans-serif;
+}
+.switchDark{
+    background-color: #3494b1;
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 1rem;
+    align-items: center;
+    justify-content: space-between;
+
+   
+}
+.switchDark.bx bx-moon{
+    height: 20px;
+    width: 20px;
+}
+.switchDark span{
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    display: block;
+    color: #151515;
+    background: none;
+}
+.switchDark::after{
+    display: block;
+    background: #fffbf5;
+    width: 2.5rem;
+    height: 2.5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: unset;
+    border-radius: 50%;
+    transition: all .5s ease;
+    box-shadow: 0 0 1.5px 1.5px rgba(0, 0, 0, .5);
+    content: "";
+}
+.switchDark.active{
+    background: #f3e704;
+}
+.switchDark.active::after{
+    left: unset;
+    right: 0;
+}
+*::selection{
+    background:var(--black);
+    color:var(--white);
+}
+body{
+    background: #fff;
+    color: #000;
+}
+body.dark{
+    background: #222;
+    color: #fff;
+}
+.contact{
+    background:var(--dark);
+    padding-bottom: 2rem;
+    
+}
+
+
+

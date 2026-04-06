@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="img/png" href="images/Favicon.png">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+  <title>Diseño web personalizados|Prowebsoluciones</title>
+
+  <!--=============== FAVICON ===============-->
+  <!-- <link rel="shortcut icon" href="" type="image/x-icon" /> -->
+
+  <!--=============== Box Icons ===============-->
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+  <link rel="stylesheet" href="css/mimodal.css">
+
+
+
+
+</head>
+
+<body>
+  <!--==================== HEADER ====================-->
+  <header>
+    <div class="container header">
+      <!--date time JS-->
+      <div id="date" class="date">
+        <i class="bx bx-calendar"></i>
+        <span id="date-info"></span>
+      </div>
+
+      <div id="time" class="time">
+        <i class="bx bx-time"></i>
+        <span id="time-info"></span>
+      </div>
+      <!--Botom dark JS-->
+      <div>
+        <button class="toggle-btn active" id="switch">
+          <i class="bx bx-sun bx-sm"></i>
+          <i class="bx bx-moon bx-sm"></i>
+
+
+        </button>
+
+      </div>
+      <nav class="desktop-menu mobile-hidden" id="nav">
+        <ul>
+          <li><a href="#home_section">Home</a></li>
+          <li><a href="#about_section">Empresa</a></li>
+          <li><a href="#products_section">Servicios</a></li>
+          <li><a href="#blog_section">Proyectos</a></li>
+          <li><a href="#contact_section">contacto</a></li>
+        </ul>
+      </nav>
+      <div id="trigger-menu" class="menu-icon desktop-hidden">
+        <i class="bx bx-menu"></i>
+      </div>
+
+      <!--==================== Navbar ====================-->
+    </div>
+  </header>
+  <div id="menu-mobile-container">
+    <div class="dark-part"></div>
+    <nav id="mobile-menu" class="menu mobile">
+      <ul>
+        <li><a href="#home_section">Home</a></li>
+        <li><a href="#about_section">Empresa</a></li>
+        <li><a href="#products_section">Servicios</a></li>
+        <li><a href="#blog_section">Blog</a></li>
+        <li><a href="#contact_section">contacto</a></li></ul>
+    </nav>
+  </div>
+
+  <!--==================== Main ====================-->
+
+  <main>
+    <!--==================== Hero ====================-->
+    <section id="home_section" class="section flex-desktop flex-row-reverse container">
+      <div class="img pop-animation">
+        <img src="assets/img/Prowebsol-01.png" alt="hero image" />
+      </div>
+      <div class="description">
+        <p class="top-title">Prowebsoluciones</p>
+        <h1 class="title">Diseñamos web con las mejores soluciones para su negocio</h1>
+        <p class="paragraph">
+          ¿Por qué elegir ProweSoluciones?<br>
+
+          En un mercado lleno de opciones, destacamos porque no solo creamos sitios web, sino experiencias digitales que
+          conectan
+          con tus clientes y elevan tu negocio. Combinamos diseño único, funcionalidades estratégicas y un servicio
+          personalizado
+          para que tu marca sea inolvidable. Con ProweSoluciones, tu éxito online no es una meta, es una garantía.
+        </p>
+
+        <a href="modal.html">
+          <button class="primary-btn">Nuestra Historia</button>
+        </a>
+      </div>
+    </section>
+
+    <!--==================== empresa ====================-->
+
+    <section id="#about_section " class="section flex-desktop container">
+      <div class="img img-center pop-animation">
+        <img src="assets/img/gifanimadoproweb.gif" alt="about image" />
+      </div>
+      <div class="description">
+        <p class="top-title">Empresa</p>
+        <h2 class="title">Tu página web,hecha a medida.</h2>
+        <p class="paragraph">
+          "Prowebsoluciones" es una empresa especializada en el diseño y
+          desarrollo de páginas web con soluciones innovadoras y eficaces.
+        </p>
+        <p class="paragraph">
+
+          Contamos con servicios de consultoría, planeación, diseño, desarrollo y
+          marketing digital que le permitirán crecer y alcanzar nuevos mercados.
+        </p>
+        <button id="contact_button" class="secondery-btn">Contáctanos</button>
+      </div>
+    </section>
+
+    <!--==================== service ====================-->
+    <section id="why_us" class="section flex-desktop flex-row-reverse container">
+      <div class="img img-center pop-animation">
+        <img src="assets/img/promo2_Монтажная область 1.jpg" alt="service image" />
+      </div>
+      <div class="description">
+        <p class="top-title">Innovación y diseño web para tu negocio.</p>
+        <h2 class="title">Servicios que ofrecemos:</h2>
+        <div class="icon-box-container">
+          <div class="icon-box">
+            <div class="icon"><i class='bx bx-code-alt'></i></div>
+            <h3 class="icon-box-title">Diseño de Páginas Web</h3>
+            <p class="icon-box-des">
+              Diseños web económicos, creativos que impulsan tu negocio.
+              Diseños adaptados a tus necesidades.
+
+
+            </p>
+          </div>
+          <div class="icon-box">
+            <div class="icon"><i class="bx bx-store"></i></div>
+            <h3 class="icon-box-title">E-commerce Digital</h3>
+            <p class="icon-box-des">
+              Creamos tiendas online personalizadas con diseños atractivos y catálogos electrónicos modernos.
+          </div>
+          <div class="icon-box">
+            <div class="icon"><i class="bx bxl-android"></i></div>
+            <h3 class="icon-box-title">Mobile Application</h3>
+            <p class="icon-box-des">
+              Desarrollador de aplicaciones móviles Android, experto en investigación de campo
+              para identificar y resolver problemas en el uso.
+            </p>
+          </div>
+          <div class="icon-box">
+            <div class="icon"><i class='bx bx-data'></i></div>
+            <h3 class="icon-box-title">Hospedaje y dominio</h3>
+            <p class="icon-box-des">
+              Ofrecemos un servicio completo de alojamiento web y dominio URL
+              para que su sitio web sea accesible en línea 24/7.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--==================== Features ====================-->
+    <div class="bg-section">
+      <section class="section flex-desktop container">
+        <div class="img pop-animation">
+          <img src="assets/img/Faq.png" alt="about image" />
+        </div>
+        <div class="box-container2">
+          <p class="top-title">FAQ</p>
+          <h2 class="title">¿Desea saber más sobre cómo podemos <br>
+            colaborar con usted?</h2>
+          <div class="accordion">
+            <div class="image-box">
+              <img src="images/brainstorming_15401369.gif" alt="Faq">
+            </div>
+            <div class="accordion-text">
+              <div class="title">preguntas frecuentes</div>
+              <ul class="faq-text">
+                <li>
+                  <div class="question-arrow">
+                    <span class="question">¿precios de una web?</span>
+                    <i class="bx bxs-chevron-down arrow"></i>
+                  </div>
+                  <p>Los costos para el diseño de una página web pueden variar ampliamente según la complejidad del
+                    proyecto. Factores como el número de páginas requeridas, funcionalidades adicionales, diseño gráfico
+                    y
+                    programación pueden influir en el precio final. Nuestro equipo trabajará contigo para crear un
+                    presupuesto personalizado basado en tus necesidades específicas. Llama hoy mismo para obtener una
+                    cotización.</p>
+                  <span class="line"></span>
+                </li>
+                <li>
+                  <div class="question-arrow">
+                    <span class="question">¿Tiempo de entrega?</span>
+                    <i class="bx bxs-chevron-down arrow"></i>
+                  </div>
+                  <p>El tiempo estimado para entregar tu sitio web dependerá del alcance y detalles de tu proyecto.
+                    Normalmente, los proyectos menores tomarían entre una semana y dos semanas para completarlos,
+                    mientras
+                    que los proyectos más grandes pueden tardar hasta varios meses. Sin embargo, podemos discutir el
+                    horario previsto y adaptarnos a tus preferencias durante la consulta inicial. Confirmate con
+                    nosotros
+                    para comenzar a construir tu nueva identidad digital hoy mismo.</p>
+                  <span class="line"></span>
+                </li>
+                <li>
+                  <div class="question-arrow">
+                    <span class="question">¿Que otros servicios ofreces?</span>
+                    <i class="bx bxs-chevron-down arrow"></i>
+                  </div>
+                  <p>aplicaciones mobiles,administracion de redes sociales,</p>
+                  <span class="line"></span>
+                </li>
+                <li>
+                  <div class="question-arrow">
+                    <span class="question">Trabajos de diseño gráfico</span>
+                    <i class="bx bxs-chevron-down arrow"></i>
+                  </div>
+                  <p>nuestro estudio de diseño gráfico, donde creamos soluciones visualmente impactantes y efectivas
+                    para
+                    todas las necesidades empresariales</p>
+                  <span class="line"></span>
+                </li>
+                <li>
+                  <div class="question-arrow">
+                    <span class="question">¿Facturas?</span>
+                    <i class="bx bxs-chevron-down arrow"></i>
+                  </div>
+                  <p>Facturamos todos nuestro proyectos,pero todos nuestros precios no incluyen </p>
+                  <span class="line"></span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!--==================== Products ====================-->
+    <section id="products_section" class="section container">
+      <div class="text-center">
+        <p class="top-title">Nuestros servicios</p>
+        <h2 class="title">Tenemos amplia experiencia en el diseño web y marketing digital</h2>
+      </div>
+      <div class="product-box-container">
+        <div class="product-box">
+          <h3 class="product-box-title">Desarrollo web</h3>
+          <img src="assets/img/Mundo.gif" alt="web" />
+          <p>
+            Desarrollo de páginas web Html5,css3,JavaScript,php estáticas,dinámicas,landing pages,
+            blogs,tienda online,aplicaciones web
+          </p>
+
+          <a href="#contact_section">
+            <button class="secondery-btn">Contáctanos</button>
+          </a>
+        </div>
+        <div class="product-box">
+          <h3 class="product-box-title">Páginas CMS</h3>
+          <img src="assets/img/Tablas.gif" alt="Cms" />
+          <p>
+            WordPress CMS es una excelente opción para la creación de páginas web debido a su gran
+            comunidad de programadores y diseñadores que contribuyen constantemente en la mejora de
+            la herramienta.
+
+          </p>
+          <a href="#contact_section">
+            <button class="secondery-btn">Contáctanos</button>
+          </a>
+        </div>
+        <div class="product-box">
+          <h3 class="product-box-title">Email corporativo</h3>
+          <img src="assets/img/correo.gif" alt="Email" />
+          <p>
+            Correo corporativo de alto rendimiento para empresas de todas las industrias.
+          </p>
+          <a href="#contact_section">
+            <button class="secondery-btn">Contáctanos</button>
+          </a>
+        </div>
+        <div class="product-box">
+          <h3 class="product-box-title">Marketing Digital</h3>
+          <img src="assets/img/Compu.gif" alt="" />
+          <p>
+            Es el conjunto de técnicas y herramientas que se utilizan para fomentar
+            la presencia y el posicionamiento de una empresa en internet.
+          </p>
+          <a href="#contact_section">
+            <button class="secondery-btn">Contáctanos</button>
+          </a>
+        </div>
+        <div class="product-box">
+          <h3 class="product-box-title">Seguridad y mantenimiento</h3>
+          <img src="assets/img/Seguridad.gif" alt="" />
+          <p>
+            Todos nuestros sitios web cuentan con seguridad SSl 24/7
+          </p>
+          <a href="#contact_section">
+            <button class="secondery-btn">Contáctanos</button>
+          </a>
+        </div>
+        <div class="product-box">
+          <h3 class="product-box-title">Social Media Tool</h3>
+          <img src="assets/img/Compu y dispostivo.gif" alt="" />
+          <p>
+            Administración de redes sociales facebook
+            instagram
+            Google my business
+            Meta business
+          </p>
+
+          <a href="#contact_section">
+            <button class="secondery-btn">Contáctanos</button>
+          </a>
+        </div>
+      </div>
+
+
+    </section>
+
+    <!--==================== Features ====================-->
+    <section class="section flex-desktop container">
+      <div class="description">
+        <p class="top-title">Diseño Gráfico</p>
+        <h2 class="title">El diseño gráfico es vital para el éxito de todas las organizaciones</h2>
+        <p class="paragraph">
+          Deja que nuestra pasión por el diseño se integre contigo y
+          transforme tu compañía en un icono reconocible y recordado por todos.
+
+
+        </p>
+
+        <div class="icon-box-container">
+          <div class="icon-box">
+            <div class="icon"><i class="bx bx-upside-down"></i></div>
+            <h3 class="icon-box-title">Nuestra pasión por el diseño</h3>
+            <p class="icon-box-des">
+              Desde logotipos hasta folletos publicitarios, nuestro equipo experto en diseño gráfico
+              está dedicado a crear materiales que reflejen el mensaje y la identidad de tu empresa.
+            </p>
+          </div>
+          <div class="icon-box">
+            <div class="icon"><i class="bx bx-user-pin"></i></div>
+            <h3 class="icon-box-title">Tu compañía en un icono
+              reconocible y recordado por todos.
+
+            </h3>
+            <p class="icon-box-des">
+
+              "Nuestra experiencia en diseño gráfico le brinda a
+              su empresa una apariencia profesional y memorables."
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="img pop-animation">
+        <img src="assets/img/Pumas.gif" alt="about image" />
+      </div>
+    </section>
+
+
+
+
+    <!--==================== Blog ====================-->
+    <div id="blog_section" class="bg-section">
+      <section class="section blog container">
+        <div class="text-left">
+          <p class="top-title">Ultimos proyectos</p>
+          <h2 class="title">sitios web elaborados</h2>
+          <p class="paragraph width-75">
+            siempre tenemos una web a tus necesidades y medida de tu presupuesto.
+          </p>
+        </div>
+        <div class="blog-container">
+          <article class="blog">
+            <div class="blog-img">
+              <img src="images/Perrazo.jpg" alt="" />
+
+            </div>
+            <div class="blog-des">
+              <p>Elaboración de proyecto fecha 25,05,2025 </p>
+              <h3>
+                EMPRESA DISTRIBUIDORA DE ALIMENTOS PARA PERRO
+              </h3>
+            </div>
+            <a href="https://superperrazo.com/" target="_blank"></a>
+          </article>
+          <article class="blog">
+            <div class="blog-img">
+              <img src="images/disolarmex.png" alt="" />
+            </div>
+            <div class="blog-des">
+              <p>Elaboración de proyecto fecha 28,12,2024</p>
+              <h3>
+                EMPRESA INSTALACIONES DE PANELES SOLARES
+              </h3>
+            </div>
+            <a href="https://disolarmex.com/" target="_blank"></a>
+          </article>
+          <article class="blog">
+            <div class="blog-img">
+              <img src="images/superportada.jpg" alt="" />
+            </div>
+            <div class="blog-des">
+              <p>Elaboración de proyecto fecha 10,04,2025</p>
+              <h3>
+                EMPRESA DE SURTIDO DE INSUMOS EN REFINERIA SUPER 111
+              </h3>
+            </div>
+            <a href="https://super111productosymas.org/" target="_blank"></a>
+          </article>
+         
+          <article class="blog">
+            <div class="blog-img">
+              <img src="images/aandfconstructionplus.jpg" alt="" />
+
+            </div>
+            <div class="blog-des">
+              <p>Elaboración de proyecto fecha 18,01,2025 </p>
+              <h3>
+                EMPRESA AMERICANA (USA) REPARACION DE TECHOS
+              </h3>
+            </div>
+            <a href="https://aandfconstructionplus.com/" target="_blank"></a>
+          </article>
+           <article class="blog">
+            <div class="blog-img">
+              <img src="images/Twinbridgebuilder.jpg" alt="" />
+
+            </div>
+            <div class="blog-des">
+              <p>Elaboración de proyecto fecha 28,02,2025 </p>
+              <h3>
+                EMPRESa amaericana (USA) CONSTRUCTORA DE CASA DE MADERA 
+              </h3>
+            </div>
+            <a href="https://twinbridgebuilders.com/" target="_blank"></a>
+          </article>
+          <article class="blog">
+            <div class="blog-img">
+              <img src="images/soluciones tecnicas.png" alt="" />
+            </div>
+            <div class="blog-des">
+              <p>Elaboración de proyecto fecha 02,02,2025</p>
+              <h3>
+                EMPRESA INSTALACIONES COMPUTADORES
+              </h3>
+            </div>
+            <a href="https://solucionestecnicaspc.cloud/" target="_blank"></a>
+          </article>
+           
+          <article class="blog">
+              <div class="blog-img">
+                <img src="images/TAQGUERO.jpg" alt="" />
+              </div>
+              <div class="blog-des">
+                <p>Elaboración de proyecto fecha 09,09,2025</p>
+                <h3>
+                  EMPRESA RESTAURANTE EN HOUSTON TX
+                </h3>
+              </div>
+              <a href="https://taqueriaelguero.online/" target="_blank"></a>
+            </article>
+
+            <article class="blog">
+              <div class="blog-img">
+                <img src="images/GRANITESTONE.jpg" alt="" />
+              </div>
+              <div class="blog-des">
+                <p>Elaboración de proyecto fecha 01,09,2025</p>
+                <h3>
+                  EMPRESA AMERICANA  GRANITE STONE (USA)
+                </h3>
+              </div>
+              <a href="https://lagranitestone.org/" target="_blank"></a>
+            </article>
+        </div>
+      </section>
+    </div>
+    <!--==================== Contact ====================-->
+    <section id="contact_section" class="section contact container">
+      <div class="text-left">
+        <p class="top-title">Contáctanos</p>
+        <h2 class="title">Estamos a sus ordenes</h2>
+        <p class="paragraph width-75">
+          Somos una empresa socialmente responsable y comprometidos con su proyecto.
+        </p>
+        <div class="address">
+          <ul>
+            <li>
+              <i class="bx bxs-map"></i>
+              <p>Villahermosa,Tabasco,México</p>
+            </li>
+            <li>
+              <i class="bx bx-envelope"></i>
+              <p>contacto@prowebsoluciones.org</p>
+            </li>
+            <li>
+              <i class="bx bx-phone"></i>
+              <p>9931294640</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <form action="enviar_correo.php" method="post" "class=" contact">
+        <div class="input-container">
+          <input type="text" name="name" id="name" placeholder="Su nombre y apellidos" required="true" />
+          <input type="email""email" name="email" id="email " placeholder="Email" required="true" />
+          <input type="text" name="number" id="number" placeholder="tel" required="true" />
+          <input type="text" placeholder="Titulo" />
+        </div>
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="Escribe tu mensaje"></textarea>
+
+        <div class="mb-3 bt-10 form-check elevate">
+          <input type="checkbox" class="form-check-input" id="acepto" required>
+          <label class="form-check-label" for="acepto">Acepto la política de privacidad</label>
+        </div>
+
+        <style>
+          .elevate {
+            margin-top: -10px;
+          }
+        </style>
+
+        <button class="primary-btn">Envíar email</button>
+      </form>
+    </section>
+  </main>
+
+  <!--==================== Footer ====================-->
+  <footer class="footer container">
+    <div class="top-footer">
+      <div class="address">
+        <h3 class="title">Siguenos en nuestras redes sociales</h3>
+        <ul>
+          <li>
+            <a href="https://www.facebook.com/proyectoswebsoluciones" target="_blank">
+              <i class="bx bxl-facebook"></i> Facebook
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/ART04/dmx" target="_blank">
+              <i class="bx bxl-github"></i> GitHub
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/proyectoswebsoluciones/" target="_blank">
+              <i class="bx bxl-instagram"></i> Instagram
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="links">
+        <div class="link">
+          <h3 class="title">Links</h3>
+          <ul>
+
+            <li><a href="#about_section">Empresa</a></li>
+            <li><a href="#products_section">Servicios</a></li>
+            <li><a href="#blog_section">Proyectos</a></li>
+            <li><a href="#contact_section">Contáctanos</a></li>
+          </ul>
+        </div>
+        <div class="link">
+          <h3 class="title">Aviso Legal</h3>
+          <ul>
+            <li><a href="aviso-cookies.html">propiedad</a></li>
+            <li><a href="aviso-cookies.html">Cookies</a></li>
+            <li><a href="aviso-cookies.html">Privacidad</a></li>
+            <li><a href="aviso-cookies.html">Legal</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="newsletter">
+        <h3 class="title">Suscríbete a nuestro boletín</h3>
+        <p class="paragraph">
+          Envíanos tu correo para recibir promociones y noticias de la comunidad.
+        </p>
+        <div class="newsletter-input">
+          <input type="email" id="emailInput" placeholder="Tu email aquí..." />
+          <button id="subscribeButton" aria-label="Subscribe">
+            <i class="bx bx-mail-send"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-footer">
+      <div class="copyright">
+        Derecho de autor©2015-2024<a href="https://prowebsoluciones.org/">Hecho con ❤️ www.prowebsoluciones.org</a>
+      </div>
+
+      <div class="contador">
+        <p>Visitas: <span id="contador-visitas">Cargando...</span></p>
+      </div>
+    </div>
+
+
+  </footer>
+  <div id="gotoup" aria-label="gotoup"><i class="bx bx-chevron-up"></i></div>
+
+  <!-- scroll top  -->
+  <button id="scrollToTopBtn" class="scroll-to-top-btn">
+    <span class="progress-bar"></span>
+    <span class="arrow">&#8593;</span>
+  </button>
+
+
+  <!-- ventana emergente  -->
+  <div id="cookiePopup"
+    style="display: none; position: fixed; bottom: 10px; right: 10px; width: 400px; background-color: #fff8f8; padding: 15px; box-shadow: 0 4px 8px rgba(90, 136, 0, 0.8); z-index: 10000;">
+    <p>Este sitio utiliza cookies para mejorar tu experiencia. Al continuar navegando, aceptas su uso.</p>
+    <button id="acceptCookie"
+      style="margin-top: 10px; padding: 10px 20px; background-color: #a30707; color: #f2eded; border: none; border-radius: 5px;">Aceptar</button>
+  </div>
+
+
+
+
+
+  <!-- barra mobil flotante -->
+  <div class="floating-bar" id="floatingBar">
+    <a href="https://wa.me/529931294640?text=¡Hola! necesito informacion para un proyecto web" target="_blank"><i
+        class="bx bxl-whatsapp"></i></a>
+    <a href="tel:529931294640" target="_blank"><i class='bx bx-mobile'></i></a>
+    <a href="mailto:contacto@prowebsoluciones.org" target="_blank"><i class='bx bx-envelope'></i></a>
+
+
+  </div>
+
+  <!--===== GSAP =====-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+
+
+
+  <!--==================== Main JavaScript File ====================-->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://kit.fontawesome.com/c15b744a04.js" crossorigin="anonymous"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/script.js"></script>
+  <script src="assets/js/click-scroll.js"></script>
+  <script src="assets/js/newsletter.js"></script>
+  <script src="js/cookies.js"></script>
+  <script src="js/mimodal.js"></script>
+
+
+  <script>
+    // Realizar una solicitud al archivo PHP para obtener el contador de visitas
+    fetch('contador.php')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('contador-visitas').innerText = data;
+      })
+      .catch(error => {
+        console.error('Error al obtener el contador de visitas:', error);
+      });
+
+    // boton modal de mi secction iconos animados
+
+
+  </script>
+
+
+
+  <!-- Contenedor del modal -->
+  <button id="floatingButton">+</button>
+
+  <!-- Contenedor del modal -->
+  <button id="promoButton">Ver promociones</button>
+</body>
+
+</html>

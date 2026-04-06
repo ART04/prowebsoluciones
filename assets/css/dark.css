@@ -1,0 +1,66 @@
+
+
+:root{
+    --blue:#069dfb;
+    --black:#343232;
+    --white:#fffcfc;
+    --grey:#fbfafa;
+    --Inter:'Inter', sans-serif;
+    --Montserrat:'Montserrat', sans-serif;
+    --poppins:'Poppins', sans-serif;
+    --Quicksand:'Quicksand', sans-serif;
+}
+.toggle-btn {
+    display: inline-block;
+    border: none;
+    background:#1F8A70;
+    color:#fffcfc;
+    outline: none;
+    cursor: pointer;
+    height: 33px;
+    width: 33px;
+    border-radius: 50%;
+    font-size: 1.3rem;
+    transition: 0.3s;
+    margin-bottom: 10px;
+   
+  }
+  
+  .toggle-btn i {
+    line-height: 31px;
+    
+  }
+  
+  .toggle-btn:hover {
+    background:#a40505;
+    
+  }
+  .toggle-btn i:last-child {
+    display: none;
+  }
+  
+   .toggle-btn i:first-child {
+    display: block;
+  }
+  
+  .toggle-btn i:last-child {
+    display: block;
+  }
+  
+.toggle-btn i:first-child {
+    display: none;
+  }
+  
+*::selection{
+    background:var(--black);
+    color:var(--white);
+}
+body{
+    background:#fff;
+    color: #000;
+}
+body.dark{
+    background: #222;
+    color: #fff;
+ 
+}

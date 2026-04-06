@@ -1,0 +1,74 @@
+.scroll-to-top-btn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    color: #000;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    z-index: 999;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1000;
+  }
+  
+  .scroll-to-top-btn.active {
+    opacity: 1;
+  }
+  
+  .scroll-to-top-btn .progress-bar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    margin-left: -20px;
+    background-color: transparent;
+    border-radius: 50%;
+    transform: rotate(-90deg);
+    transform-origin: center;
+    transition: background-color 0.3s ease;
+    
+  }
+  
+  .scroll-to-top-btn.active .progress-bar {
+    background-color: #a10808;
+  }
+  
+  .scroll-to-top-btn .progress-bar::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    background-color: #a10808;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    transition: opacity 0.3s ease;
+    opacity: 0;
+  }
+  
+  .scroll-to-top-btn.active .progress-bar::after {
+    opacity: 1;
+  }
+  
+  .scroll-to-top-btn .arrow {
+    display: block;
+    position: relative;
+    font-size: 24px;
+    line-height: 1;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+  }
+  
+  .scroll-to-top-btn.active .arrow {
+    opacity: 1;
+  }
+  
+  

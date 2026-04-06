@@ -1,0 +1,74 @@
+
+
+footer {
+    background-color: #23369f;
+    padding: 10px 30px;
+    text-align: center;
+    height: 380px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 100PX;
+  }
+  
+  .icon-container {
+    display: inline-block;
+    margin: 10px;
+    font-size: 35px;
+    color: #f8fbfc;
+    cursor: pointer;
+    
+  }
+  .icon-container a {
+    text-decoration: none; /* Quita la decoración de texto de los enlaces */
+    color: inherit; /* Hereda el color del contenedor para ocultar los enlaces */
+    pointer-events: none; /* Desactiva los eventos del enlace */
+  }
+  
+  .icon-container:hover {
+    background: #037609;
+    color: rgb(255, 255, 255); /* Cambia el color de los iconos al hacer hover en cualquier contenedor */
+  }
+  
+  .icon-container:hover a {
+    pointer-events: auto; /* Reactiva los eventos del enlace al hacer hover en el contenedor */
+  }
+
+ footer .copyright {
+    margin-top: 0px;
+  }
+  
+  footer .copyright p {
+    margin: 0;
+    padding-top: 10px;
+    color: azure;
+    font-size: 20px;
+  }
+  
+  footer .copyright a {
+    color: #edda0f;
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  footer .copyright a:hover{
+    color: #eb780d;
+  }
+  
+  .footer-links {
+   text-align: center;
+    margin: 10px 0;
+    font-size: 18px;
+  }
+  
+  .footer-link {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .footer-link:hover {
+    color: #87cefa;
+  }
+  
+
+  

@@ -1,0 +1,129 @@
+
+
+
+*{
+    font-family: 'Inter', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    outline: none; border:none;
+    text-decoration: none;
+    transition: all .3s linear;
+}
+.box-container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .tab-container {
+    width: 50%;
+    color:#8b8d8c
+  }
+  
+  .tab {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .tab button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .tab button img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 5px;
+  }
+  
+  .tab button span {
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .tab button:hover {
+    background-color: #25f88f;
+  }
+  
+  .tab button.active {
+    background-color: #e4fc2c;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .tabcontent {
+    display: none;
+    text-align: center;
+    padding: 20px;
+    animation: fadeEffect 0.5s ease;
+  }
+  
+  .tabcontent img {
+    width: auto;
+    height: auto;
+    max-height: 400px;
+    margin-bottom: 10px;
+  }
+  
+  .tabcontent p {
+    line-height: 1.2;
+    font-size: 16px;
+    color: rgb(173, 172, 172.0.8);
+  }
+
+  .title{
+    color:#8b8d8c;
+  }
+  
+  @keyframes fadeEffect {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    .tab {
+      flex-direction: column;
+    }
+  
+    .tab button {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    .tabcontent img {
+        width: 80%;
+        height: auto;
+    }
+  }
+  
+  /* Estilos para dispositivos de tablet en modo horizontal */
+@media screen and (min-width: 700px) and (max-width: 1023px) {
+  .box-container2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .tab {
+    flex-basis: calc(33.33% - 20px);
+    margin: 10px;
+  }
+}
+
+
+  
+  

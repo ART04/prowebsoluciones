@@ -1,0 +1,37 @@
+/* Estilos para la ventana modal */
+    .modal-backdrop {
+      background-color: rgba(0, 0, 0, 0.7); /* Fondo translúcido negro */
+    }
+
+    .modal {
+      display: none; /* Inicialmente oculto */
+    }
+
+    .modal-content {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 500px;
+      margin: auto;
+    }
+
+    .modal-header {
+      border-bottom: none;
+    }
+
+    .modal-body {
+      font-size: 1rem;
+      line-height: 1.5;
+      color: #333;
+    }
+
+    .logo {
+      display: block;
+      margin: 0 auto;
+      width: 100px;
+      height: auto;
+    }
+
+    .close-btn {
+      margin-top: 20px;
+    }

@@ -1,0 +1,146 @@
+
+
+
+/* styles.css */
+
+.set2{
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient( rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)),url(../images/portada\ Principal-01.png );
+    opacity: 0.9;
+}
+
+  
+  .main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+  }
+  
+/* Agrega otros estilos según tus preferencias */
+
+  
+  .div1 {
+    width: 100%;
+    height: auto;
+    /* Agrega otros estilos según tus preferencias */
+  }
+  
+  .div1 img {
+    width: 100%;
+    height: auto;
+    /* Agrega otros estilos según tus preferencias */
+  }
+  
+  .div2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* Agrega otros estilos según tus preferencias */
+  }
+  
+  .div2 h2 {
+    font-weight: bold;
+    font-size: 80px;
+    color: #029e77;
+    padding:0px 50px;
+    /* Agrega otros estilos según tus preferencias */
+  }
+  
+  .div2 h3,
+  .div2 p {
+    text-align: justify;
+    font-size: 24px;
+    color: #fff;
+    padding:0px 50px;
+    padding-top: 20px;
+    /* Agrega otros estilos según tus preferencias */
+  }
+  
+  .div2 a.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #029e77;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px; /* Ajusta este valor según tus necesidades */
+    /* Agrega otros estilos según tus preferencias */
+  }
+  
+  .div2 a.button:hover {
+    background-color: #bd2015;
+    color: #fff;
+    transition: background-color 0.3s ease;
+    /* Agrega animaciones o estilos adicionales para el hover */
+  }
+
+
+
+  .div2 a.button {
+    display: inline-block;
+    padding: 10px 30px; /* Ajusta el tamaño del padding según tus preferencias */
+    font-size: 24px; /* Ajusta el tamaño de la fuente según tus preferencias */
+  }
+  
+  /* styles.css */
+section {
+    position: relative;
+  }
+  
+  .video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  
+  .video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+  }
+  
+ 
+  @media (max-width: 768px) {
+    .main-container {
+      flex-direction: column;
+      height: auto;
+      
+
+    }
+    
+    .div1 {
+      order: 1;
+      width: 100%;
+      height: auto;
+    }
+    
+   .div2 {
+      order: 2;
+      word-wrap: break-word;
+      text-align:center;
+      font-size:18px;
+      width: 50%;
+    }
+    .div2 h2{
+        font-size: 40px;
+        align-content: center;
+        text-align:center;
+        overflow: hidden;
+
+    }
+  }
+  
+  
+  
