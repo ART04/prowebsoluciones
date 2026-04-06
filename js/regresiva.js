@@ -16,7 +16,7 @@ function updateDateTime() {
 
 
   // Establece la fecha objetivo para la cuenta regresiva
-const targetDate = new Date("2027-12-31T23:59:59");
+const targetDate = new Date("2026-12-31T23:59:59");
 
 function updateCountdown() {
   const now = new Date();
